@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Nouvelle annonce</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css"></link>
+	<link href="/bootstrap/css/bootstrap-tag-cloud.css" rel="stylesheet"></link>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"
+		type="text/javascript"></script>
+	<script
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/header.js"></script>
+	<script
+		src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="/bootstrap/js/bootstrap-tag-cloud.js"></script>
+	<script src="js/newAnnonce.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="js/script1.js"></script>
+</head>
+
+
+<body
+	onload="document.getElementById('header').innerHTML=loadHTML('header.html'); document.getElementById('footer').innerHTML=loadHTML('footer.html');">
+<div id="header"></div>
+	<br />
+	<form id="formulaire" action="">
+<fieldset>
+			<legend>Ajouter une annonce</legend>
+
+			<input type="text" id="titre" />
+			<br /> <br />
+
+			<textarea rows="5" cols="30" id="contenu" maxlength="1024" ></textarea>
+			<br /> <br />
+
+			<!-- Gestion des tags -->
+			<p>Vous pouvez ajouter des tags pour faciliter la recherche de votre annonce :</p>
+			<div id="tag-info" class="input-append">
+				<input type="text" />
+				<button class="btn" type="button" >
+					Add <i class="icon-plus"></i>
+				</button>
+			</div>
+			
+			<!-- 
+			<input type="hidden" id="addTag" value="#{ajoutAnnonceBean.annonce.tags}" /> -->
+			<!-- mettre la dessous via le JSON les tag ajoutes en liste (compris par bootstrap) -->
+			<ul id="tag-cloud"></ul>
+
+			<input type="submit" value="Envoyer" />
+		</fieldset>
+	</form>
+	<div id="footer"></div>
+</body>
+</html>

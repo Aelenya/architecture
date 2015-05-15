@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<persistence version = "2.0"
+	xmlns = "http://java.sun.com/xml/ns/persistence">
+	<persistence-unit name = "basePersistence">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<jta-data-source>jdbc/MySQLResource</jta-data-source>
+		<class>dom.Utilisateur</class>
+		<class>dom.Annonce</class>
+		<class>dom.Message</class>
+		<class>dom.SessionMessage</class>
+		
+		<properties>
+            <property name="eclipselink.ddl-generation" value="create-tables" />
+            
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/persistence"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="persist"/>
+            <property name="hibernate.connection.password" value="persist"/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hbm2ddl.auto" value="create"/>
+            
+            <!-- debut ajout Corentin pour mise a jour des tables -->
+            <property name="hibernate.hbm2ddl.auto" value="update" />  
+             <!--  fin ajout corentin voir http://www.kianworknotes.com/2013/04/how-to-update-database-schema-when-jpa.html pour plus de details -->	
+		</properties>
+	</persistence-unit>
+</persistence>

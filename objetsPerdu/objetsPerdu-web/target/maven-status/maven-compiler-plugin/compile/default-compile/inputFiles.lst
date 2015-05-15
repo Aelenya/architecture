@@ -1,0 +1,16 @@
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/objetPerdu/ObjetPerduDTO.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/objetTrouve/ObjetTrouveFacade.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/checkConnexion/CheckConnexion.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/validators/EmailUniqueValidator.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/facadeRecherche/FacadeRecherche.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/objetPerdu/ObjetPerduFacade.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/validators/EmailExistsValidator.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/validators/ConfirmationPasswordValidator.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/facadeAnnonce/FacadeAnnonce.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/objetTrouve/ObjetTrouveDTO.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/facadeMessagerie/MessagerieFacade.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/facadeMessagerie/creationSessionMessageFacade.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/validators/PseudoExistsValidator.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/deconnexion/Deconnexion.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/main/java/dom/Tag.java
+/home/olivier/Uni/ProjetInformatique/workspace/objetsPerdu/objetsPerdu-web/src/test/java/org/objetsPerdu/web/AppTest.java

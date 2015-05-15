@@ -1,0 +1,34 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="fr"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:customer="http://java.sun.com/jsf/composite/components/customer"
+	xmlns:p="http://primefaces.org/ui">
+	<h:head>
+		<meta charset="utf-8"/>
+		<title>annonces recentes</title>
+		<h:outputStylesheet library="css" name="feuille.css"/>
+		<f:view locale="fr_FR"/>
+		<title>Exemple annonces recentes</title>
+	</h:head>
+	<h:body>
+		<p:carousel numVisible="1" value="#{annoncesView.list}" itemStyle="height: 200px;width: 600px;" 
+				var="annonce" headerText="Dernieres annonces">
+			<p:tab>
+				<h:outputText id="titre" value="#{annonce.titre} :" />
+				<br />
+				<hr />
+				<h:outputText value="#{annonce.contenu}" />
+			</p:tab>
+		</p:carousel>
+		
+		<p:ring value="#{annoncesView.list}" var="annonce">
+			<h:outputText id="titre" value="#{annonce.titre}" />
+		</p:ring>
+	</h:body>
+</html>

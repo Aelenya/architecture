@@ -1,0 +1,94 @@
+<!-- DEBUT HEADER -->
+<div id="header" class="container no-padding no-margin">
+	<div id="menu" class="container no-padding no-margin">
+		<div class="row no-margin">
+			<div class="col-md-3 col-md-offset-2 no-padding">
+				<a href="/home/user/index.html"><img class="img-responsive"
+					src="/home/img/footprint.png" alt="FootPrint"></a>
+			</div>
+		</div>
+		<div class="row no-margin">
+			<div class="col-md-8 col-md-offset-2 no-padding">
+				<nav class="navbar navbar-default no-padding no-border">
+					<div class="container no-padding">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle"
+								data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+									class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="collapse navbar-collapse no-padding no-border"
+							id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="/home/user/index.html"> <span
+										class="glyphicon glyphicon-home"></span> <strong>ACCUEIL</strong>
+								</a></li>
+								<li class="dropdown"><a class="dropdown-toggle"
+									data-toggle="dropdown" href="#"><strong>ANNONCE
+											RAPIDE</strong> </a>
+									<ul class="dropdown-menu">
+										<li><a href="/home/user/objetPerdu.html">Objet perdu</a></li>
+										<li><a href="/home/user/objetTrouve.html">Objet
+												trouvé</a></li>
+									</ul></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="/home/user/profil.html"><span
+										class="glyphicon glyphicon-user"></span> <strong>Profil</strong></a></li>
+								<li><a href="#"><span
+										class="glyphicon glyphicon-envelope"></span> <strong>Messages</strong></a></li>
+								<li><a href="#"><span
+										class="glyphicon glyphicon-th-list"></span> <strong>Annonces</strong></a></li>
+								<li><a href="/home/logout"><span
+										class="glyphicon glyphicon-log-out"></span> <strong>Déconnexion</strong></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+	<div id="search-separator" class="container no-margin no-padding">
+		<div class="row no-margin no-padding">
+			<div class="col-md-8 col-md-offset-2 search-bar">
+				<div class="row">
+					<div class="col-md-3">
+						<form class="form-inline">
+							<div class="radio">
+								<label><input type="radio" name="optradio"><strong>PERDU</strong></input></label>
+							</div>
+							<div class="radio">
+								<label><input type="radio" name="optradio"><strong>TROUVE</strong></input></label>
+							</div>
+						</form>
+
+					</div>
+					<div class="col-md-3">
+						<input type="text" class="form-control" id="mc"
+							placeholder="Mots-clés"></input>
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="date"
+							data-provide="datepicker" data-date-format="dd/mm/yyyy"
+							placeholder="1/04/2045" />
+						<!-- <i class="glyphicon glyphicon-calendar form-control-feedback"></i> -->
+					</div>
+					<div class="col-md-2">
+						<input type="text" class="form-control" id="lieu"
+							placeholder="Lieu"></input>
+					</div>
+					<div class="col-md-2">
+						<button type="submit" class="btn btn-warning" value="Chercher"
+							id="search">
+							Chercher <span class="glyphicon glyphicon-search"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="white-separator" class="container no-margin no-padding"></div>
+</div>
+<!-- FIN HEADER -->

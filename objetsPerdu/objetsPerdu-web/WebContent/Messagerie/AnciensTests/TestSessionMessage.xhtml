@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+    <h:head>
+        <title>Test BDD Message par corentin</title>
+    </h:head>
+    <h:body>
+    <h:form>
+		
+	
+	</h:form>
+	
+		<p><h:outputLabel>Annonce: </h:outputLabel><h:outputText value="#{beanTestMessagerie.annonce.titre}" /></p>
+    
+    <h:dataTable value="#{beanTestMessagerie.messages}"  var="item">
+    	<h:column>
+      		<f:facet name="header">
+      			<h:outputText value="Date" />
+      		</f:facet>
+     	 	<h:outputText value="#{item.date}" />
+    	</h:column>
+    	<h:column>
+      		<f:facet name="header">
+    		<h:outputText value="Texte" />
+    		</f:facet>
+      		<h:outputText value="#{item.texte}" />
+      	</h:column>
+     </h:dataTable>
+      
+      
+	<h:form>
+		<h:outputLabel>Expediteur:</h:outputLabel>
+		<h:selectOneMenu value="#{beanTestMessagerie.exp}">
+			<f:selectItems value="#{beanTestMessagerie.listeUtilisateurs}" var="item" itemValue="#{item.id}" itemLabel="#{item.pseudo}" />
+		</h:selectOneMenu>
+		<h:outputLabel>Dstinataire:</h:outputLabel>
+		<h:selectOneMenu value="#{beanTestMessagerie.dest}">
+			<f:selectItems value="#{beanTestMessagerie.listeUtilisateurs}" var="item" itemValue="#{item.id}" itemLabel="#{item.pseudo}" />
+		</h:selectOneMenu>
+	<p><h:commandButton value="Actualiser" action="TestSessionMessage"/></p>
+		<p><h:inputTextarea value="#{beanTestMessagerie.texte}"/></p>
+		<h:commandButton value="valider" action="#{beanTestMessagerie.valider}"/>
+	</h:form>
+
+</h:body>
+</html>

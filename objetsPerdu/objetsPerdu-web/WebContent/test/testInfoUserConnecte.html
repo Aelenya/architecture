@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+		$.getJSON("/home/facade/testInfoUserConnecte", function(data) {
+			$.each(data, function(index, donnee){
+				alert("utilisateur connecte: "+donnee);
+			})
+			
+		});
+	</script>
+
+	
+
+</body>
+</html>
+
+
+

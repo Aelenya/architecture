@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Profil</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="/home/bootstrap/css/bootstrap.css"></link>
+<link rel="icon" href="favicon.ico" type="image/x-icon"></link>
+<script src="/home/bootstrap/js/bootstrap.js"></script>
+<script src="/home/js/script1.js"></script>
+<script src="/home/js/profil.js"></script>
+<script src="/home/js/headerUser.js"></script>
+</head>
+
+<body
+	onload="document.getElementById('header').innerHTML=loadHTML('header.html'); document.getElementById('footer').innerHTML=loadHTML('footer.html');">
+
+	<div id="header"></div>
+
+	<div class="container">
+		<form class="form-horizontal">
+			<fieldset>
+				<legend>Compte</legend>
+				<div class="form-group">
+					<label class="control-label col-md-2" for="pseudo">pseudo<span
+						class="requis">*</span></label>
+					<div class="col-md-10">
+						<input type=text id="pseudoPassword" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2" for="password">mot de
+						passe<span class="requis">*</span>
+					</label>
+					<div class="col-md-10">
+						<input type=text id="password" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+					<div class="col-md-10">
+						<input type="button" class="btn btn-info" id="SubmitModifierMotDePasse"
+							value="Submit" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+					<div class="col-md-10">
+						<input type="button" class="btn btn-info" id="ModifierMotDePasse"
+							value="Modifier mon mot de passe" />
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<form class="form-horizontal">
+			<fieldset>
+				<div class="form-group">
+					<label class="control-label col-md-2" for="pseudo">pseudo<span
+						class="requis">*</span></label>
+					<div class="col-md-10">
+						<input type=text id="pseudoEmail" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2" for="email">adresse
+						mail<span class="requis">*</span>
+					</label>
+					<div class="col-md-10">
+						<input type=text id="email" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+					<div class="col-md-10">
+						<input type="button" class="btn btn-info" id="SubmitModifierAdresse"
+							value="submit" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+					<div class="col-md-10">
+						<input type="button" class="btn btn-info" id="ModifierAdresse"
+							value="Modifier mon adresse mail" />
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<form class="form-horizontal">
+			<fieldset>
+				<div class="form-group">
+					<label class="control-label col-md-2" for="pseudo">pseudo<span
+						class="requis">*</span></label>
+					<div class="col-md-10">
+						<input type=text id="pseudoCompte" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+					<div class="col-md-10">
+						<input type="button" class="btn btn-info" id="SubmitSupprimerCompte"
+							value="Supprimer" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+					<div class="col-md-10">
+						<input type="button" class="btn btn-info" id="SupprimerCompte"
+							value="Supprimer mon compte" />
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+
+
+	<div id="footer"></div>
+
+</body>
+</html>

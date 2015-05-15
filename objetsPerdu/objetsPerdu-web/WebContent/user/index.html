@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Accueil</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<link rel="stylesheet" href="/home/bootstrap/css/bootstrap.css"></link>
+<link rel="icon" href="/home/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/home/css/style.css"></link>
+
+<link rel="stylesheet" href="/home/css/jqcloud.css" />
+
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="/home/js/index.js"></script>
+<script src="/home/js/jqcloud.js"></script>
+<script src="/home/bootstrap/js/bootstrap.js"></script>
+<script src="/home/js/script1.js"></script>
+<script src="/home/js/headerUser.js"></script>
+
+</head>
+
+
+<body>
+	<div id="header"></div>
+
+		<div id="content" class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 bordure">
+
+
+					<div class="row">
+						<div class="jumbotron">
+							<div class="row">
+								<div class="col-md-3">
+									<img src="/home/img/cone.png" class="img-responsive"></img>
+								</div>
+								<div class="col-md-9">
+									<h2>Bienvenue sur FootPrint!</h2>
+									<p>Ce site est actuellement en développement...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-md-6">
+							<!-- 
+				<p:carousel id="carousel" numVisible="1"
+					value="#{annoncesView.list}" itemStyle="height:100%, width:100%"
+					var="annonce" headerText="Dernieres annonces"
+					style="margin-bottom:0">
+					<p:tab>
+						<h:outputText id="titre"
+							value="#{annonce.titre} : (#{annonce.dateCreation})" />
+						<br />
+						<hr />
+						<h:outputText value="#{annonce.contenu}" />
+					</p:tab>
+				</p:carousel>
+				-->
+
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Titre</th>
+										<th>Tags</th>
+										<th>Date</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+						<div class="col-md-6">
+							<p>
+							<h4>
+								<span class="glyphicon glyphicon-map-marker"></span>Blabla Map
+								des derniers objets
+							</h4>
+							<br />
+							<h4>Et oui le truc à gauche bug un peu beaucoup...</h4>
+							</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<a href="Messagerie/Messagerie.html"><h3>Si vous voulez
+								tester la messagerie c'est par ici !</h3></a>
+					</div>
+					<div class="row">
+						<a href="/home/showPerdu.html"><h3>Pour voir les
+								dernières annonces d'objets perdus c'est par là !</h3></a>
+					</div>
+					<div class="row">
+						<div id="cloud" style="width: 550px; height: 350px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div id="footer"></div>
+
+
+</body>
+</html>

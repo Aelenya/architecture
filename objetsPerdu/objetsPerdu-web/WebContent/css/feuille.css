@@ -1,0 +1,74 @@
+h1
+{
+	text-align: center;
+	color: blue;
+}
+.im_center
+{
+	display: block;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+}
+.requis
+{
+	color: red;
+	margin-right: 30px;
+}
+fieldset
+{
+	background-color: #CCC;
+	border: 2px solid blue;
+}
+#carousel
+{
+	margin-left: auto;
+	margin-right: auto;
+	float: center;
+}
+.container
+{
+	width: 100%;
+}
+#logo
+{
+	float: left;
+	width: 150px;
+	margin-left: 15px;
+}
+#search
+{
+	float: right;
+	width:	100px;
+	margin-right: 50px;
+}
+#buttons
+{
+	float: center;
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#searchXHTML
+{
+	float: center;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#buttonAddAnnonce
+{
+	float: left;
+	width: 200px;
+}
+
+body
+{
+	background-color:gray;
+}
+mark
+{
+	background-color:red;
+	color:white;
+}

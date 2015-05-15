@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Objet trouve</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<link rel="icon" href="/home/favicon.ico" type="image/x-icon"></link>
+<link rel="stylesheet" href="/home/bootstrap/css/bootstrap.css"></link>
+<link rel="stylesheet" href="/home/bootstrap/css/bootstrap-tag-cloud.css"></link>
+
+
+<!-- ?key=AIzaSyCB5kjzuN3u1CwwDw7QRpDgBJPHYgtKrgo" -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="/home/js/header.js"></script>
+<script src="/home/js/jquery.ui.map.js"></script>
+<script src="/home/js/jquery.ui.map.services.js"></script>
+
+<script src="/home/js/script1.js"></script>
+<script src="/home/bootstrap/js/bootstrap.js"></script>
+<script src="/home/js/datepicker.js"></script>
+<script src="/home/js/objetTrouve.js"></script>
+<script src="/home/js/headerUser.js"></script>
+
+<style>
+#gmap {
+	height: 300px
+}
+</style>
+</head>
+
+
+<body>
+	<div id="header"></div>
+
+	<div id="content" class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 bordure">
+
+				<div class="row">
+					<legend class="texte-rouge">Objet Trouvé</legend>
+				</div>
+
+				<form id="formulaire" class="form-horizontal">
+					<fieldset>
+						<div class="form-group">
+							<label class="control-label col-md-3 col-md-offset-2" for="text">Nom
+								de l'objet</label>
+							<div class="col-md-5">
+								<input type="text" id="nomObjetTrouve" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-md-3 col-md-offset-2"
+								for="tag-info">Tags</label>
+							<div class="col-md-5">
+								<div id="tag-info" class="input-append">
+									<input type="text" id="tag" />
+									<button class="btn" type="button" title="Ajouter le tag">
+										Ajouter<i class="icon-plus"></i>
+									</button>
+								</div>
+								<input type="hidden" id="addTag" />
+								<ul id="tag-cloud"></ul>
+							</div>
+						</div>
+						<div class="form-group">
+							<div id="gmap" class="col-md-6"></div>
+							<input type="hidden" id="lat" /> <input type="hidden" id="lng" />
+							<input type="hidden" id="addr" />
+
+						</div>
+						<div class="form-group milieu">
+							<input type="button" class="btn btn-success btn-lg"
+								id="buttonObjetTrouve" value="Ajouter l'annonce" /> <a
+								class="btn btn-danger btn-lg" href="/home/index.html"
+								title="Retourner à la page d'accueil">Annuler</a>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer"></div>
+
+	<script src="/home/bootstrap/js/bootstrap-tag-cloud.js"></script>
+
+</body>
+</html>

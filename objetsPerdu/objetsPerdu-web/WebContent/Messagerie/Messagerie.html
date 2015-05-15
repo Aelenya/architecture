@@ -1,0 +1,48 @@
+<!-- cette page renvoie la liste de toutes les session de messages d'un certain utilisateur
+les affiches, l'utilisateur peut en selectionner une et redirection sur la session choisie -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="messagerie.css">
+</head>
+<body>
+	<h3>Liste des sessions d'un utilisateur en particulier</h3>
+	<!--  <form>
+       	<label>Choisir l'utilisateur particulier:</label>
+       	<select id="MenuUtilisateur"></select>
+       	<label id="choisir">Choisir</label></br>
+       	</br>
+    </form>-->
+    <div class="coteAcote">
+    	<label>Sessions de message ouvertes:</label><br/>
+    	<select id="Sessions" class="coteAcote"></select>
+    </div>
+    
+    <div class="coteAcote">
+    	<center>
+    		<table id="tableauSessionParticuliere"></table>
+
+    		<textarea rows="4" cols="50" id="texteArea"></textarea>
+    		<p id="ValidationTextArea">Envoyer</p>
+    	</center>
+    </div>
+    
+    
+    <p>
+   Une fois connecte, vous pouvez acceder a toutes vos sessions de messages.<br/>
+   pour essayer, vous pouvez essayer cet utilisateur:<br/>
+   superman@superhero.com avec le mot de passe: Superman123
+   <a href="http://pinfo2.unige.ch:8080/home/user/connexion.html"> connexion </a><br/>
+   <a href="http://pinfo2.unige.ch:8080/home/test/testInfoUserConnecte.html"> Voir l'adresse email de l'utilisateur connecte</a>
+    </p>
+   
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="Messagerie.js"></script>
+
+</body>
+</html>

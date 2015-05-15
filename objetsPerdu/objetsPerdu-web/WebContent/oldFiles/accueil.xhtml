@@ -1,0 +1,66 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<h1>HELLO WORLD !!</h1>
+	<p:carousel id="carousel" numVisible="1" value="#{annoncesView.list}"
+		itemStyle="height: 200px;width: 600px;" var="annonce"
+		headerText="Dernieres annonces">
+		<p:tab>
+			<h:outputText id="titre"
+				value="#{annonce.titre} : (#{annonce.dateCreation})" />
+			<br />
+			<hr />
+			<h:outputText value="#{annonce.contenu}" />
+		</p:tab>
+	</p:carousel>
+	<p>
+		En attendant d'avoir l'application du prof, vous pouvez déjà jouer
+		avec ce projet Eclipse !<br /> Vous pouvez ainsi vous entrainer a
+		utiliser git, le reste ne changera strictement rien pour vous, le
+		principe est simple : vous programmez sur Eclipse (projet
+		web-dynamic+maven), vous compilez et lancez sur votre serveur
+		glassfish local et une fois satisfait (et quand il n'y a PLUS de
+		bugs), vous utilisez git push pour envoyer sur le serveur. <br />
+		Celui-ci devrait normalement automatiquement compiler et mettre en
+		ligne la nouvelle version, cela peut prendre un peu de temps, mais ca
+		se fera... normalement.
+	</p>
+	<p>
+		En cas de probleme, n'hesitez pas a m'envoyer un mail ou, si je suis
+		sur skype, a m'informer par la. "Un probleme" = le site n'est plus en
+		ligne ou bien git ne marche pas, ou la compilation ne se passe pas.
+		Evitez <strong>ABSOLUMENT</strong> de push sur le serveur une version
+		qui ne compile pas chez vous surtout, ca m'arrangerait enormement :p
+	</p>
+	<p>
+		PS : Lorsque vous faites un push, assurez vous d'avoir <strong>mis
+			a jour</strong> le pom.xml avant, augmentez d'une version (p.ex 0.0.5-SNAPSHOT
+		a la place de 0.0.4-SNAPSHOT), sinon le serveur ne compilera et ne
+		mettra rien a jour puisqu'il croira que c'est toujours la meme version
+		(pensez-y)
+	</p>
+
+	<p>Test de conflit git.. ok, git fonctionne bien et ne vous laisse
+		pas push s'il y a quelque chose a pull !</p>
+
+	<p>Petit test, 1 - 2, 1 - 2, testing testing!</p>
+	<img src="Images/im1.png" alt="Logo git"></img>
+
+	<p>modif.. modif...</p>
+	<a href="page2.html">En cliquant la, vous devriez voir une autre
+		page !</a>
+	<br />
+	<!-- <br /> retour a la ligne  -->
+	<a href="PageMichael.html">En cliquant la, vous arrivez a la page
+		Michael!</a>
+	<br />
+	<a href="test.html">Super page de Sarah !</a>
+	<br />
+	<a href="newAnnonce.xhtml"><h3>Ajouter une nouvelle annonce !</h3></a>
+	<p>blablabla ajout test Corentin</p>
+	<p>hcklv.ebl-nlvghkxc</p>
+	<p>test de Michael</p>
+</ui:composition>

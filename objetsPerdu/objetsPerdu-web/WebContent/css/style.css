@@ -1,0 +1,149 @@
+.header {
+	margin: 0px 0px 0px 0px;
+	top: 0px;
+	width: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+#menu {
+	background-color: #707070;
+	background: url(../img/barre-gris.png) repeat-x;
+	background-size: 100% 100%;
+	/*position: fixed;
+	top: 0;
+	left: 0;
+	background-position: -2px -5px;
+	background-color: #4d4d4d;*/
+}
+
+#content {
+	padding-bottom: 100px;
+}
+
+.putain-fixe-toi-en-bas-bordel-de-merde {
+	padding-right: 0;
+	padding-left: 0;
+	position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin-bottom: 0px;
+	border-width: 1px 0 0;
+}
+
+#nav ul {
+	list-style-type: none;
+	background: #909909;
+	padding-left: 0px;
+}
+
+.no-margin {
+	margin: 0px !important;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.no-border {
+	border-style: none;
+}
+
+.bordure {
+	border-style: outset;
+	border-width: 3px;
+	border-color: #414141;
+	background-color: #F0F0F0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
+	min-height: 500px;
+}
+
+.texte-rouge {
+	color: #890826;
+}
+
+.a-droite {
+	text-align: right;
+}
+
+.milieu {
+	text-align: center;
+}
+
+.search-bar {
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.btn-custom {
+	color: #ecf0f1;
+	background-color: #890826;
+	border-color: #890826;
+}
+
+.radio {
+	margin-right: 5px;
+}
+
+.vide-dessus {
+	margin-top: 50px;
+}
+
+.rect {
+	background-color: #890826;
+	font-size: 2em;
+	text-align: center;
+	color: #ecf0f1;
+	border-style: solid;
+	border-right: medium solid #414141;
+	border-bottom: medium solid #414141;;
+}
+
+.annonce {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #414141;
+	background-color: #F0F0F0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.legende-liste {
+	background-color: #696969;
+	color: #ecf0f1;
+	text-align: center;
+	font-size: 2em;
+}
+
+.contenu-liste {
+	background-color: #FFFFFF;
+	font-size: 1.3em;
+}
+
+#search-separator {
+	/*height: 10px;*/
+	width: 100%;
+	/*background: url(../img/bg-orange.png);*/
+	background: url(../img/barre-rouge.png) repeat-x;
+	background-size: 100% 100%;
+	background-color: #890826;
+	margin-bottom: 20px;
+	color: #ecf0f1;
+	background-color: #890826;
+}
+
+#white-separator {
+	height: 30px;
+	width: 100%;
+	background-color: transparent;
+}
